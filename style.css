@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -44,8 +49,16 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     gap: 0px;
+    position: fixed;
+    top: 10px; 
+    left: 60%;
+    right: 0;
+    transform: translateX(-75%); 
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.014); 
+    backdrop-filter: saturate(115%) blur(5px);
+    border-radius: 20px; 
 }
 
 .navbar .flex-item {
@@ -70,7 +83,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 130px;
+    padding-top: 230px;
     padding-bottom: 220px; 
     gap: 20px;
 }
@@ -123,6 +136,7 @@ body {
     width: 100%; 
     height: 500px;
     box-sizing: border-box; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.042);
 }
 
 .project-card h1 {
@@ -156,3 +170,141 @@ body {
     object-fit: cover;
     max-height: 300px;
 }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px 20px;
+    margin-top: 50px;
+    color: white;
+}
+
+.about .mypicture {
+    text-align: right;
+}
+
+.about .mypicture img { 
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.176);
+}
+
+.about .description {
+    padding-left: 50px;
+    margin-right: 100px;
+    align-items: left;
+}
+
+.about .description h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.about .description p { 
+    line-height: 1.6;
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.resume-card {
+    background-color: rgba(13, 18, 91, 0.089);
+    border-radius: 40px;
+    padding: 40px;
+    margin-bottom: 100px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.quadrant-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.quadrant {
+    padding: 20px; 
+}
+
+.resume-content { 
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+}
+
+.resume-section { 
+    margin-bottom: 20px; 
+}
+
+.resume-section h2 {
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.experience-item, .education-item {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.experience-item h3 {
+    margin-bottom: 5px;
+}
+
+.role, .dates, .degree {
+    font-style: italic;
+    opacity: 0.7;
+    margin: 0; 
+}
+
+.skills-list {
+    color: white;
+}
+
+.skills-list strong {
+    font-weight: bold;
+}
+
+.experience-item ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin-top: 10px;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+}
+
+.edu-logo, .exp-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+.skills-list, .interests-list {
+    color: white;
+    list-style: none; 
+    padding: 0;
+}
+
+.skills-list li, .interests-list li {
+    margin-bottom: 10px;
+}
+
+.skills-list i, .interests-list i {
+    margin-right: 5px;
+}
+

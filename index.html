@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
         <title>Sample Web Page</title>
@@ -13,26 +14,26 @@
     <body>
         <nav class = "navbar">
             <div class="flex-item" style="flex: 1">
-                <a href="">Home</a> 
+                <a href="#home-section">Home</a> 
             </div>
             <div class="flex-item" style="flex: 1">
-                <a href="">Portfolio</a>
+                <a href="#portfolio-section">Portfolio</a>
             </div> 
             <div class="flex-item" style="flex: 1">
-                <a href="">About</a> 
+                <a href="#about-section">About</a> 
             </div>
             <div class="flex-item" style="flex: 1">
                 <a href="">Contact</a>
             </div>
         </nav>
-        <div class="home">
+        <div class="home" id="home-section">
             <div class="flex-item" style="flex: 1">
                 <p> Hello, World! </p>
                 <p> I'm Bry. A Developer. </p>
                 <p> I am motivated to deliver top-notch solutions for the industry.</p>
             </div>
         </div>
-        <div class="project">
+        <div class="project" id="portfolio-section">
             <div class="flex-item" style="flex: 3.7;">
                 <div class="project-card" style="background-color: rgba(76, 124, 188, 0.8)">
                     <div class="role">Frontend Developer</div>
@@ -71,7 +72,7 @@
                 </div>
             </div>
             <div class="flex-item" style="flex: 2;">
-                <div class="project-card" style="background-color: rgba(145, 187, 230, 0.8)">
+                <div class="project-card" style="background-color: rgba(161, 210, 255, 0.8)">
                     <div class="role">Full Stack Developer</div>
                     <h1>Library Inventory and Logging System</h1>
                     <div class="description">
@@ -80,8 +81,97 @@
                 </div>
             </div>
         </div>
-        <div class="about">
-            
+        <div class="about" id="about-section">
+            <div class="flex-item" style="flex: 0.7">
+                <div class="mypicture">
+                    <img src="assets/MyPic.png" alt="Your Photo">
+                </div>
+            </div>
+            <div class="flex-item" style="flex: 1.3">
+                <div class="description">
+                    <h1>Justin Dayne Bryant Pena</h1>
+                    <p>A motivated software engineer looking to obtain a functional role in this industry where I can impart and improve my technical skills and soft skills to deliver top-notch solutions with a relentless pursuit of knowledge. Experience includes coding, analysis, troubleshooting, and testing my personal projects as an undergraduate. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="resume">
+            <div class="resume-card">
+                <div class="quadrant-container">
+                    <div class="quadrant">
+                        <div class="resume-section">
+                            <h2>Education</h2>
+                            <div class="education-item">
+                                <div class="title-logo">
+                                    
+                                    <h3>University of the Philippines</h3>
+                                </div>
+                                <p class="degree">Bachelor of Science in Computer Science</p>
+                                <p class="dates">2023 – Present</p>
+                            </div>
+                            <div class="education-item">
+                                
+                                <h3>De La Salle Lipa</h3>
+                                <p class="degree">Science, Technology, Engineering and Mathematics</p>
+                                <p class="dates">2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrant">
+                        <div class="resume-section">
+                            <h2>Skills</h2>
+                            <ul class="skills-list">
+                                <li><i class="fas fa-code"></i> C</li>
+                                <li><i class="fab fa-python"></i> Python</li>
+                                <li><i class="fab fa-java"></i> Java</li>
+                                <li><i class="fas fa-chart-line"></i> R</li>
+                                <li><i class="fab fa-js"></i> JavaScript</li>
+                                <li><i class="fab fa-html5"></i> HTML</li>
+                                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                                <li><i class="fas fa-paint-roller"></i> Adobe XD</li>
+                                <li><i class="fas fa-pen-ruler"></i> Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quadrant">
+                        <div class="resume-section">
+                            <h2>Interests</h2>
+                            <ul class="interests-list">
+                                <li><i class="fas fa-laptop-code"></i> Software Development</li>
+                                <li><i class="fas fa-chart-bar"></i> Data Science</li>
+                                <li><i class="fas fa-calculator"></i> Numerical Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quadrant">
+                        <div class="resume-section">
+                            <h2>Experience</h2>
+                            <div class="experience-item">
+                                <div class="title-logo">
+                                    
+                                    <h3>PRU Life UK</h3>
+                                </div>
+                                <p class="role">Licensed Insurance Agent</p>
+                                <p class="dates">August 2024 – Present</p>
+                                <br>
+                                    Administered financial consultations with eight (8) prospects and issued three (3) insurance policy quotations.
+                                    Participated in five (5) seminars about rapport building, financial planning, and money management to hone both interpersonal and intrapersonal skills for the industry
+                            </div>
+                            <div class="experience-item">
+                                <div class="title-logo">
+
+                                    <h3>CRESCIT, De La Salle Lipa</h3>
+                                </div>
+                                <p class="role">Head of Literary and Literary Editor</p>
+                                <p class="dates">November 2022 – July 2023</p>
+                                <br>
+                                Managed two (2) publications in the organization and spearheaded four (4) successful major releases 
+                                Trained more than twenty (20+) literary writers and reviewed all submitted literary write-ups for publishing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
