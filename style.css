@@ -1,27 +1,105 @@
-.flex-container{
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    flex-direction: column;
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        45deg,
+        #87bbeb,
+        #adbee6, 
+        #c3deff, 
+        #7fbdff, 
+        #5e90fb, 
+        #6a85b6, 
+        #87a8eb  
+    );
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    animation: gradientAnimation 15s ease infinite;
+    font-family: 'Poppins', sans-serif;
 }
 
-.flex-item{
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
-.navbar{
+.flex-container {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 157, 255);
     flex-direction: row;
 }
 
-.ul-navbar{
-    list-style-type: none;
-    margin: 0;
+.flex-item {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 0px;
+}
+
+.navbar .flex-item {
+    border: none; 
+    padding: 10px 0px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex: 1;
+    max-width: 120px; 
+}
+
+.navbar .flex-item a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: 200;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 50px; 
+    gap: 20px;
+}
+
+.home .flex-item {
+    border: none; 
     padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex: 1;
+    max-width: 100%; 
+}
+
+.home .flex-item p {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 6em;
+    font-weight: 600;
+    margin: -10px 10px;
+    color: rgb(255, 255, 255); 
+}
+
+.home .flex-item p:nth-child(3) {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 40px; 
+    color: white;
 }
