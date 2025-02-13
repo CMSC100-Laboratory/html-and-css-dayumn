@@ -76,6 +76,11 @@ body {
     text-decoration: none; 
     color: white; 
     font-weight: 200;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar .flex-item a:hover {
+    color: rgba(1, 14, 134, 0.265); 
 }
 
 .home {
@@ -137,7 +142,7 @@ body {
     height: 500px;
     box-sizing: border-box; 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.042);
-    transition: transform 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-card:hover {
@@ -334,6 +339,11 @@ body {
     font-size: 1em;
     color: rgb(255, 255, 255); 
     margin-top: 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer .flex-item a:hover {
+    color: rgba(15, 0, 145, 0.315); 
 }
 
 .footer .flex-item .corp{
