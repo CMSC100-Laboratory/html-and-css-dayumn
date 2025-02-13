@@ -137,6 +137,12 @@ body {
     height: 500px;
     box-sizing: border-box; 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.042);
+    transition: transform 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.01);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.06);
 }
 
 .project-card h1 {
